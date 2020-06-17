@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
                 cout << "Digite uma mensagem" << endl;
                 getline(cin, message);
                 arquivo_saida.open("saida.txt", ios::app);
-                arquivo_saida << message;
+                arquivo_saida << message << endl;
                 arquivo_saida.close();
                 return 0;
             }
